@@ -1,0 +1,107 @@
+.blog-post-section {
+  .container {
+    position: relative;
+    padding: 6.2em 0;
+  }
+  p {
+    margin: 0;
+  }
+  .blog-post-header {
+    padding-bottom: 2.5em;
+    .blog-post-title {
+      @include front-title-style;
+    }
+    .blog-post-subtitle {
+      @include front-subtitle-style;
+    }
+  }
+  .post {
+    padding-bottom: 4em;
+  }
+  .author-avatar {
+    padding-right: 2.5em;
+    p {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .post-info {
+    overflow: hidden;
+    @include front-blog-text-style;
+    .post-heading {
+      @include blog-heading-style;
+    }
+    .post-date {
+      @include blog-date-style;
+      padding-bottom: 2em;
+    }
+    .thumbnail-wrap {
+      padding-bottom: 2.5em;
+    }
+    .post-text-wrap {
+      @include front-blog-text-style;
+      padding-bottom: 3.2em;
+    }
+    .custom-last-paragraph {
+      padding-bottom: 4.2em;
+    }
+  }
+  .post-content-wrap {
+    padding-bottom: 3em;
+  }
+  .custom-heading {
+    @include front-headline-style;
+    padding-bottom: 1.5em;
+  }
+  .custom-middle-paragraph {
+    @include blog-date-style;
+    text-transform: inherit;
+    margin: 3em 0 3em 5em;
+    border-left: 2px solid $orange-color;
+    padding: 1.5em 0 1.5em 2.5em;
+    background-color: #fef1de;
+  }
+}
+
+.blog-post-section {
+  .author-gravatar {
+    position: relative;
+    padding: 0;
+    .author-name {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0, 0, 0, 0.8);
+      text-align: center;
+      padding: 4px 0;
+      @include front-subtitle-style;
+      color: $gray-color;
+      text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.85);
+    }
+  }
+  .author-biographical-info {
+    background-color: $blue-color;
+    padding: 3em 3em 2.5em 2.5em;
+    margin-left: 2.3em;
+    position: relative;
+    p {
+      @include front-service-text-style;
+      color: #dbefff;
+    }
+    &:after {
+      content: '';
+      position: absolute;
+      left: -4%;
+      bottom: 40%;
+      border: 20px solid transparent;
+      border-right: 20px solid $blue-color;
+    }
+  }
+}
+
+a:visited {
+  color: $orange-color;
+}

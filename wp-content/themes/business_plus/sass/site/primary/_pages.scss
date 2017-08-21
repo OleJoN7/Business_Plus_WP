@@ -1,0 +1,22 @@
+.article {
+  background-color: #dbefff;
+  .entry-title {
+    padding:1em 0;
+    @include front-subtitle-style;
+    font-size:3rem;
+    color:$gray-color;
+    text-align: center;
+  }
+  .entry-content {
+    margin:0;
+    .pt-cv-content-item {
+      width:50%;
+    }
+    .clients-section {
+      padding:0 0 2em;
+    }
+    .partners-section {
+      padding:0 0 2em;
+    }
+  }
+}

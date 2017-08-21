@@ -1,0 +1,128 @@
+.main-footer {
+  padding: 5.5em 0;
+  .footer-logo-block {
+    flex-basis:25%;
+    .footer-logo-container {
+      width: 164px;
+      height: 34px;
+      margin-bottom: 1.5em;
+    }
+    p {
+      font: 13px "OpenSans", sans-serif;
+      text-transform: uppercase;
+      color: $gray-color;
+      padding-bottom: 15px;
+    }
+    .social-icons {
+      margin: 0;
+      li {
+        display: inline-block;
+        vertical-align: middle;
+        text-align: center;
+        margin-right: 10px;
+        border: 1px solid $gray-color;
+        width: 29px;
+        height: 29px;
+      }
+      i {
+        color: $gray-color;
+        transition: .3s all linear;
+        &:hover {
+          color: $orange-color;
+        }
+      }
+    }
+  }
+  h4 {
+    font: 1.125rem "RaleBold", sans-serif;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  .footer-nav {
+    flex-basis: 25%;
+    h4 {
+      padding-bottom: 1.5625em;
+    }
+  }
+  .footer-navbar-nav {
+    margin: 0;
+    .menu-item {
+      line-height: 39px;
+      border-bottom: 1px solid #373839;
+      width:60%;
+      &:last-child {
+        border: none;
+      }
+      i {
+        color: $orange-color;
+      }
+      a {
+        font: 0.8125rem "OpenSans", sans-serif;
+        font-weight: 700;
+        color: #7b7b7c;
+        text-transform: uppercase;
+        display: inline-block;
+        padding-left: 20px;
+      }
+    }
+  }
+  .footer-form {
+    flex-basis:50%;
+    p {
+      margin:0;
+    }
+    h4 {
+      padding-bottom: 2.2em;
+    }
+    .name-email {
+      overflow: hidden;
+      input[type="text"] {
+        font:14px "OpenSans",sans-serif;
+        float:left;
+        width:50%;
+        border-radius: 0;
+        border:1px solid  #373839;
+        background-color: #2a2b2c;
+        padding:15px 0 15px 20px;
+        color:#737476;
+      }
+      input[type="email"] {
+        font:14px "OpenSans",sans-serif;
+        float:right;
+        width:50%;
+        border-radius: 0;
+        border:1px solid  #373839;
+        border-left:none;
+        background-color: #2a2b2c;
+        padding:15px 0 15px 20px;
+        color:#737476;
+      }
+    }
+    .wpcf7-textarea {
+      font:14px "OpenSans",sans-serif;
+      border-radius: 0;
+      border:1px solid  #373839;
+      border-top:none;
+      height:100px;
+      padding:15px 0 0 20px;
+      background-color: #2a2b2c;
+      color:#737476;
+      resize: none;
+      margin-bottom:10px;
+    }
+  }
+}
+
+.footer-navbar-nav {
+  .menu-item {
+    a {
+      transition: .3s all linear;
+      &:hover {
+        color: $orange-color;
+      }
+    }
+  }
+}
+.wpcf7-form .wpcf7-response-output {
+  display:none !important;
+}

@@ -1,0 +1,83 @@
+.btn {
+  font:13px "RaleBold",sans-serif;
+  display: inline-block;
+  border-radius: 0;
+  line-height:50px;
+  padding:0 30px;
+  transition: .3s all linear;
+  text-transform: uppercase;
+  &-slider {
+    background-color:$orange-color;
+    opacity: .85;
+    color:#000;
+    &:hover {
+      color:#000;
+      opacity: 1;
+    }
+  }
+  &-link-about {
+    border:2px solid $orange-color;
+    color:#ffaf36;
+    &:visited {
+      background-color:$orange-color;
+      color:#ffaf36;
+    }
+    &:hover{
+      background-color:$orange-color;
+      color:#fff;
+    }
+  }
+  &-services-link {
+    border:2px solid $orange-color;
+    color:#ffaf36;
+    &:visited {
+      background-color:$orange-color;
+      color:#ffaf36;
+    }
+    &:hover{
+      background-color:$orange-color;
+      color:#fff;
+    }
+  }
+  &-news-link {
+    border:2px solid $orange-color;
+    color:#ffaf36;
+    position: absolute;
+    left: 54.5%;
+    bottom: -5%;
+    &:visited {
+      background-color:$orange-color;
+      color:#ffaf36;
+    }
+    &:hover{
+      background-color:$orange-color;
+      color:#fff;
+    }
+  }
+  &-form {
+    border:2px solid $orange-color;
+    color:#ffaf36;
+    background: transparent;
+    &:visited {
+      background-color:$orange-color;
+      color:#ffaf36;
+    }
+    &:hover{
+      background-color:$orange-color;
+      color:#000;
+    }
+  }
+  &-blog-link {
+    border:2px solid $orange-color;
+    color:#ffaf36;
+    background: transparent;
+    &:visited {
+      background-color:$orange-color;
+      color:#ffaf36;
+    }
+    &:hover{
+      background-color:$orange-color;
+      color:#000;
+    }
+  }
+}

@@ -1,0 +1,114 @@
+.blog-section {
+  .container {
+    position: relative;
+    padding: 6.2em 0;
+    &:after {
+      display: block;
+      content: '';
+      position: absolute;
+      bottom: 0;
+      right: 0;
+      width: 218px;
+      height: 101px;
+      background: url('./images/triangle.png') 50% no-repeat;
+    }
+  }
+  p {
+    margin: 0;
+  }
+  .blog-header {
+    padding-bottom: 2.5em;
+    .blog-title {
+      @include front-title-style;
+    }
+    .blog-subtitle {
+      @include front-subtitle-style;
+    }
+  }
+  .post {
+    padding-bottom: 6.2em;
+  }
+  .author-avatar {
+    padding-right: 2.5em;
+    p {
+      width: 60px;
+      height: 60px;
+      border-radius: 50%;
+      overflow: hidden;
+    }
+  }
+  .post-info {
+    overflow: hidden;
+    .post-heading {
+      @include blog-heading-style;
+    }
+    .post-date {
+      @include blog-date-style;
+      padding-bottom: 2em;
+    }
+    .thumbnail-wrap {
+      padding-bottom: 2.5em;
+    }
+    .post-text-wrap {
+      @include front-blog-text-style;
+      padding-bottom: 3.2em;
+    }
+  }
+}
+
+.social-block {
+  @include front-blog-text-style;
+  text-transform: uppercase;
+  padding: 10px 15px 0 0;
+  display: inline-block;
+}
+
+.addtoany_shortcode {
+  float: left;
+}
+
+.addtoany_share_save_container {
+  display: inline-block;
+  margin: 0 !important;
+}
+
+.addtoany_list a > span {
+  border-radius: 50% !important;
+}
+
+.pagination-block-wrap {
+  padding-bottom: 10px;
+  .pagination-block {
+    text-align: center;
+    .page-numbers {
+      display: inline-block;
+      padding-top: 10px;
+      text-align: center;
+      background: transparent;
+      color: #2a2b2c;
+      border: 1px solid #2a2b2c;
+      font: 18px "OpenSans", sans-serif;
+      width: 50px;
+      height: 50px;
+      margin-right: 10px;
+      line-height: 24px;
+      transition: .25s all linear;
+      &:hover {
+        color: #ffaf36;
+        border: 1px solid #ffaf36;
+      }
+      &:active {
+        color: #ffaf36;
+        border: 1px solid #ffaf36;
+      }
+    }
+    .current {
+      color: #ffaf36;
+      border: 1px solid #ffaf36;
+    }
+  }
+}
+
+a:visited {
+  color: $orange-color;
+}
